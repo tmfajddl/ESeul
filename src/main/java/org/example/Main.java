@@ -39,6 +39,7 @@ public class Main {
 
     static void game(){
         List<Integer> jungdop = re();
+        System.out.println(jungdop);
         Scanner sc = new Scanner(System.in);
         int num = 0;
         while (num < 10){
@@ -64,6 +65,9 @@ public class Main {
             }
             System.out.println(ball + " ball " + strick + " strick");
             num++;
+            if(strick==4){
+                break;
+            }
         }
         System.out.println(jungdop);
     }
