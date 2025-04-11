@@ -12,7 +12,7 @@ public class Main {
     }
 
     static int random(){
-        return (int) (Math.random()*10+1);
+        return (int) (Math.random()*10);
     }
 
     static List<Integer> re() {
@@ -25,7 +25,7 @@ public class Main {
                 if(arr.size()==1){
                     break;
                 }
-                if(arr.get(i)==b){
+                if(arr.get(i)==b || arr.get(i)==a){
                     arr.remove(i);
                 }
             }
@@ -46,7 +46,7 @@ public class Main {
             List<Integer> me = new ArrayList<>();
             int strick = 0;
             int ball = 0;
-            System.out.print("1-10까지의 숫자 4개를 입력하세요:");
+            System.out.print("0-9까지의 숫자 4개를 입력하세요:");
             me.add(sc.nextInt());
             me.add(sc.nextInt());
             me.add(sc.nextInt());
